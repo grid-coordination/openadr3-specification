@@ -1,0 +1,33 @@
+Release Notes
+
+openadr-3.0.1
+1. paths:/events/{eventID}:get:responses:'200':content:
+  before: array
+  after: schema ref
+2. paths:/vens/{venID}/resources:get:responses:'200':content:
+  before: schema ref
+  after:  array
+3. dateTime
+  add 'format: date-time'
+4. update version number to version: "3.0.1"
+5. change title to title: OpenADR 3 API
+6. add 404 response code to all endpoints with an id, e.g. events/<eventId>
+7. event.priority minimum: 0 to prevent negative priority values
+8. Add units to reportDescriptor
+9. Add pattern to restrict duration to ISO 8601 values
+10. add min, max string length and remove nullable and default from required strings:
+  - report.clientName, report.resources.resourceName, subscription.clientName, ven.venName, resource.resourceName, valuesMap.type,
+    eventPayloadDescriptor.payloadType, reportPayloadDescriptor.payloadType, reportDescriptor.payloadType
+11. optional strings are nullable w default null:
+  - eventPayloadDescriptor.units, eventPayloadDescriptor.currency, reportPayloadDescriptor.readingType, reportPayloadDescriptor.units,
+  reportPayloadDescriptor.accuracy, reportDescriptor.readingType, reportDescriptor.units
+12. dateTime not nullable and given ISO 8601 compliant default
+13. Add quotes to point.x, y as y may be interpreted as yes or true
+14. Remove default from dateTime
+15. edit delimiter of regex in objectId to be consistent with duration
+16. Add eventId query param to GET reports
+17. Add optional venName query param to GET /vens and optional resourceName to venx/{id}/resources
+18. Fixed typos in descriptions
+19. add definitions to venName to be unique to VTN and resourceName to be unique to VEN.
+20. update objectType enum in event and payload payloadDescriptors
+21. Update intervalPeriod description of duration default

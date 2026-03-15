@@ -1,0 +1,11 @@
+title VEN enrollment
+actor BL
+actor CL
+actor VEN
+
+CL->BL: create account and login
+CL->BL: register resources
+BL->CL: provide resources IDs
+BL->CL: provide client ID
+BL->CL: provide security credentials
+CL->VEN: configure with IDs and credentials

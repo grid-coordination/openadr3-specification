@@ -1,0 +1,10 @@
+title Events
+actor BL
+actor VTN
+actor VEN
+
+BL->VTN: POST event
+VEN->VTN: poll for events
+VEN->VTN: register webhook for event notifications
+BL->VTN: POST event
+VTN->VEN: send webhook notification on change of state of events

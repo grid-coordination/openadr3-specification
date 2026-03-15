@@ -1,0 +1,19 @@
+title Notifications via MQTT
+
+actor VTN_REST_API
+actor VEN
+actor VTN_MQTT_Broker
+
+VEN->VTN_REST_API: GET /notifiers
+
+VTN_REST_API->VEN: Notifier bindings, including MQTT
+
+VEN->VTN_REST_API: GET /notifiers/mqtt/topics/programs
+
+VTN_REST_API->VEN: Topic names for operations on Programs
+
+VEN->VTN_MQTT_Broker: Connect, with authentication (if required)
+
+VEN->VTN_MQTT_Broker: Subscribe to one or more topic names
+
+VTN_MQTT_Broker->VEN: Notification of change of state of specified object

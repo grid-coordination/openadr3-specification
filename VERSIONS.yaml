@@ -1,0 +1,47 @@
+# OpenADR 3 Specification Versions
+#
+# Each entry describes a version of the OpenADR 3 specification.
+# See: https://github.com/oadr3-org/specification/issues/289
+
+versions:
+  - version: "3.0.0"
+    status: released
+    directory: 3.0.0
+    notes: >
+      Initial release of OpenADR 3.
+    artifacts:
+      - openadr3.yaml
+
+  - version: "3.0.1"
+    status: released
+    directory: 3.0.1
+    notes: >
+      Patch release with bug fixes and clarifications.
+    artifacts:
+      - openadr3.yaml
+
+  - version: "3.1.0"
+    status: released
+    directory: 3.1.0
+    notes: >
+      Added support for additional notification protocols (MQTT),
+      VEN-scoped topics for object privacy, mDNS/DNS-SD VTN discovery,
+      and other enhancements.
+    artifacts:
+      - openadr3.yaml
+      - Definition.md
+      - User_Guide.md
+      - changeLog.md
+      - enumerations/
+
+  - version: "3.1.1"
+    status: development
+    directory: 3.1.1
+    notes: >
+      In development.
+    artifacts:
+      - openadr3.yaml
+      - Definition.md
+      - User_Guide.md
+      - changeLog.md
+      - enumerations/

@@ -1,0 +1,15 @@
+title workflow
+actor BL
+actor VTN
+actor VEN
+actor CL
+actor BL-web
+
+CL->BL-web: enroll
+CL->VEN: configure
+BL->VTN: create program
+VEN->VTN: read program
+BL->VTN: create events
+VEN->VTN: read events
+VEN->VTN: create report
+BL->VTN: read report

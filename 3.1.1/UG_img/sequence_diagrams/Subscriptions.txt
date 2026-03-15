@@ -1,0 +1,9 @@
+title Subscriptions
+
+actor VTN
+actor VEN
+
+
+VEN->VTN: post subscription
+
+VTN->VEN: send webhook notification on change of state of specified resources

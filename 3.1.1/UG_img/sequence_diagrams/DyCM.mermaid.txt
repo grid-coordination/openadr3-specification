@@ -1,0 +1,20 @@
+sequenceDiagram
+# title dynamic capacity management
+    actor BL
+    actor VTN
+    actor VEN
+
+    BL->>VTN: 1. capacity subscription event
+    VTN->>VEN: capacity subscription event
+    BL->>VTN: 2. capacity reservation event
+    VTN->>VEN: capacity reservation event
+    VEN->>VTN: 3. capacity request report
+    VTN->>BL: capacity request report
+    BL->>VTN: 4. capacity reservation event
+    BL->>VTN: 5. capacity available event
+    VTN->>VEN: capacity reservation event
+    VTN->>VEN: capacity available event
+    VEN->>VTN: 6. capacity request report
+    VTN->>BL: capacity request report
+    BL->>VTN: 7. capacity reservation event
+

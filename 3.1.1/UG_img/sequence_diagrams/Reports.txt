@@ -1,0 +1,10 @@
+title Reports
+actor BL
+actor VTN
+actor VEN
+
+VEN->VTN: POST report
+BL->VTN: poll for reports
+BL->VTN: register webhook for report notifications
+VEN->VTN: POST report
+VTN->BL: send webhook notification on change of state of reports
