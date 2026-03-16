@@ -2,6 +2,8 @@
 
 ## Version: 1.0.0, 2026-03-15
 
+Copyright (c) 2026 Clark Communications Corporation. Licensed under the Apache License, Version 2.0.
+
 ---
 
 # 1. Introduction

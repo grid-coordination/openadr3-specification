@@ -23,4 +23,13 @@ The [doc/](doc/) directory contains additional non-normative documentation, incl
 
 ## License
 
-Apache License 2.0 — see [LICENSE](LICENSE).
+This repository is licensed under the [Apache License 2.0](LICENSE).
+
+The OpenADR 3 specification files (OpenAPI YAML, Definition, User Guide,
+and enumerations) in the versioned directories are copyright the
+[OpenADR Alliance](https://www.openadr.org/).
+
+Additional documentation in the [doc/](doc/) directory is
+Copyright (c) 2026 Clark Communications Corporation.
+
+See [NOTICE](NOTICE) for details.
