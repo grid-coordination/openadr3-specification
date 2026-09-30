@@ -1,0 +1,45 @@
+$id: "./units.schema.json"
+title: "Units"
+description: "Units values for the eventPayloadDescriptor"
+$comment: |
+    Schema for OpenADR 3 event payload descriptor units
+
+    This file is released under the Apache 2.0 license.
+    Read more at: http://www.apache.org/licenses/LICENSE-2.0.html
+
+# This schema is different in that it does not define
+# entries in a valuesMap.  Instead, it describes the
+# allowed values for the units attribute of
+# an eventPayloadDescriptor.
+
+type: string
+enum:
+    # kilowatt-hours (kWh)
+    - KWH
+    # Therms == 100K BTU
+    - THERMS
+    # Greenhouse gas emissions: g/kWh
+    - GHG
+    # volts (V)
+    - VOLTS
+    # Current (A)
+    - AMPS
+    # Temperature (C)
+    - CELSIUS
+    # Temperature (F)
+    - FAHRENHEIT
+    # Percentage, represented as a floating point number
+    # between -1.0 and 1.0,
+    # representing -100% to +100%
+    # (0.0 to 1.0 in cases where negative values are irrelevant).
+    - PERCENT
+    # kilowatts (kW)
+    - KW
+    # kilovolt-ampere hours (kVAh)
+    - KVAH
+    # kilovolt-amperes reactive hours (kVARh)
+    - KVARH
+    # kilovolt-amperes (kVA)
+    - KVA
+    # kilovolt-amperes reactive (kVAR)
+    - KVAR

@@ -1,0 +1,55 @@
+# OpenADR 3 Specification Versions
+#
+# Each entry describes a version of the OpenADR 3 specification.
+# `upstream` pins the oadr3-org/specification commit this directory was
+# republished from, which is the last upstream commit to touch it.
+# See: https://github.com/oadr3-org/specification/issues/289
+
+upstream_repo: https://github.com/oadr3-org/specification
+
+versions:
+  - version: "3.0.0"
+    status: released
+    directory: 3.0.0
+    upstream:
+      commit: "49078365a2cd4c0301705157dd9b1d1af00ac2e7"
+      date: "2024-11-26"
+    notes: >
+      Initial release of OpenADR 3.
+    artifacts:
+      - openadr3.yaml
+      - release_notes.txt
+
+  - version: "3.0.1"
+    status: released
+    directory: 3.0.1
+    upstream:
+      commit: "a35682bf55e8cd369b944daf7be15274a099a230"
+      date: "2024-11-26"
+    notes: >
+      Patch release with bug fixes and clarifications.
+    artifacts:
+      - openadr3.yaml
+
+  - version: "3.1.0"
+    status: released
+    directory: 3.1.0
+    upstream:
+      commit: "ddd2cc58589bdc31ba1dd19fbdf90ed7e10b31dc"
+      date: "2025-08-07"
+      document_number: "20250807-X"
+    notes: >
+      Added support for additional notification protocols (MQTT),
+      VEN-scoped topics for object privacy, mDNS/DNS-SD VTN discovery,
+      and other enhancements.
+    reformatted:
+      - openadr3.yaml
+    artifacts:
+      - openadr3.yaml
+      - openadr3-UPSTREAM.yaml
+      - Definition.md
+      - Definition.pdf
+      - User_Guide.md
+      - User_Guide.pdf
+      - changeLog.md
+      - enumerations/

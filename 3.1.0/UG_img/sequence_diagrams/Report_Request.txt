@@ -1,0 +1,9 @@
+title Report Request
+actor BL
+actor VTN
+actor VEN
+
+BL->VTN: POST program with reportDescriptor
+note over BL: and/or
+BL->VTN: POST event with reportDescriptor
+VEN->VTN: POST report

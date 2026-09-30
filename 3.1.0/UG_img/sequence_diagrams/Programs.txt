@@ -1,0 +1,10 @@
+title Programs
+actor BL
+actor VTN
+actor VEN
+
+BL->VTN: POST program
+VEN->VTN: poll for programs
+VEN->VTN: register webhook for program notifications
+BL->VTN: POST program
+VTN->VEN: send webhook notification on change of state of programs

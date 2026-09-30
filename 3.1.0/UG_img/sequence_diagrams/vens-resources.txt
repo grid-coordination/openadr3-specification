@@ -1,0 +1,12 @@
+title Vens and Resources
+
+actor BL
+actor VTN
+actor VEN
+
+
+VEN->VTN: post vens
+VEN->VTN: post vens/resources
+
+BL->VTN: put vens/{venID} to add to group
+BL->VTN: put vens/{venID}/resources/{resourceID} to add to group
