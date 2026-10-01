@@ -2,7 +2,7 @@
 
 This repository contains a public copy of the [OpenADR 3 specification](https://github.com/oadr3-org/specification).
 
-The canonical source is the [oadr3-org/specification](https://github.com/oadr3-org/specification) repository, which is currently private and requires OpenADR Alliance membership to access.  The specification itself is published under the Apache License 2.0 (see [LICENSE](LICENSE)), but obtaining the documents requires registration on the [OpenADR Alliance website](https://www.openadr.org/).
+The canonical source is the [oadr3-org/specification](https://github.com/oadr3-org/specification) repository, which is currently private and requires OpenADR Alliance membership to access.  The Alliance describes its specifications as "license free but copyright of the OpenADR Alliance", and provides them at no charge, but obtaining them requires creating an account on the [OpenADR Alliance website](https://www.openadr.org/) and there is no direct link to any specification file.  See [NOTICE](NOTICE) for what each artifact's own licensing statement says.
 
 This copy is provided so that developers, researchers, and implementers can freely access the OpenADR 3 specification artifacts — the OpenAPI YAML definitions and the Definition and User Guide documents — without a registration wall.
 
@@ -55,11 +55,10 @@ Where we have applied any reformatting, the unmodified upstream bytes are preser
 
 ## License
 
-This repository is licensed under the [Apache License 2.0](LICENSE).
+The specification artifacts in the versioned directories are the work of the
+[OpenADR Alliance](https://www.openadr.org/), reproduced verbatim and unmodified. The OpenAPI YAML files declare the Apache License 2.0 in their own `info.license` block; the Definition and User Guide carry the Alliance's copyright notice without a separate licence grant. See [NOTICE](NOTICE).
 
-The OpenADR 3 specification files (OpenAPI YAML, Definition, User Guide,
-and enumerations) in the versioned directories are copyright the
-[OpenADR Alliance](https://www.openadr.org/).
+Everything else in this repository, including the `doc/` directory and the corrections described above, is licensed under the [Apache License 2.0](LICENSE).
 
 Additional documentation in the [doc/](doc/) directory is
 Copyright (c) 2026 Clark Communications Corporation.

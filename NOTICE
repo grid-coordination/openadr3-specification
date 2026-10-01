@@ -1,12 +1,32 @@
 OpenADR 3 Specification
 =======================
 
-The OpenADR 3 specification files (OpenAPI YAML, Definition, User Guide,
-and enumerations) in the versioned directories (3.0.0/, 3.0.1/, 3.1.0/,
-3.1.1/) are copyright the OpenADR Alliance and licensed under the
-Apache License, Version 2.0.
+The specification artifacts in the versioned directories (3.0.0/, 3.0.1/,
+3.1.0/) are the work of the OpenADR Alliance and are reproduced here
+verbatim and unmodified.
 
   https://www.openadr.org/
+
+The Alliance describes its specifications as "license free but copyright of
+the OpenADR Alliance". Two licensing statements accompany the artifacts
+themselves:
+
+  * The OpenAPI YAML files declare, in their own `info.license` block,
+    the Apache License, Version 2.0.
+
+  * The Definition and User Guide documents carry the Alliance's copyright
+    notice, "Copyright (c) OpenADR Alliance. All Rights Reserved", without
+    a separate licence grant.
+
+They are reproduced here because the Alliance makes them available at no
+charge but only through an account registration step, and no direct link to
+them exists. Nothing here modifies them, and no endorsement by or
+affiliation with the OpenADR Alliance is claimed or implied. Anyone wanting
+the authoritative copies, or the terms attached to them at download, should
+obtain them from the Alliance.
+
+If the OpenADR Alliance would prefer any part of this removed or reworded,
+contact grid-coordination@clark-communications.com and it will be.
 
 Additional documentation in the doc/ directory is:
 
